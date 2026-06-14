@@ -15,31 +15,33 @@
         <p>Create your account to unlock science and maths resources for Grades 9–12.</p>
       </div>
 
-      <form>
+      <form action="choosing.html" method="get">
         <div class="input-group">
           <label for="fullname">Full name</label>
-          <input type="text" id="fullname" placeholder="Your full name" required />
+          <input type="text" id="fullname" name="fullname" placeholder="Your full name" required />
         </div>
 
         <div class="input-group">
           <label for="email">Email address</label>
-          <input type="email" id="email" placeholder="you@example.com" required />
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
         </div>
 
         <div class="input-group">
           <label for="grade">Select grade</label>
-          <input type="text" id="grade" placeholder="9th, 10th, 11th or 12th" required />
+          <input type="text" id="grade" name="grade" placeholder="9th, 10th, 11th or 12th" required />
         </div>
 
         <div class="input-group">
           <label for="phone">Phone number</label>
-          <input type="tel" id="phone" placeholder="e.g. +91 98765 43210" required />
+          <input type="tel" id="phone" name="phone" placeholder="e.g. +91 98765 43210" required />
         </div>
 
         <div class="input-group">
           <label for="password">Create password</label>
-          <input type="password" id="password" placeholder="Minimum 8 characters" required />
+          <input type="password" id="password" name="password" placeholder="Minimum 8 characters" required />
         </div>
+
+        <div id="registration-error" class="error-box" style="display:none;"></div>
 
         <button class="register-button" type="submit">Register now</button>
       </form>
@@ -54,6 +56,7 @@
       </div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
 

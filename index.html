@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Study Hub</title>
+  <title>Study Hub | Science & Maths</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -14,7 +14,7 @@
         <div class="section-title">
           <div>
             <p class="brand-badge">Study Hub</p>
-            <h1>Science & Maths Material for Grades 9–12</h1>
+            <h1>Science & Maths Material for Grades 9-12</h1>
           </div>
         </div>
         <p class="section-description">Access curated study resources for Science and Mathematics, designed for the key secondary and higher secondary levels. Sign in to unlock guided notes, practice sheets, and revision tips.</p>
@@ -22,12 +22,14 @@
 
       <section class="login-card">
         <h2>Login / Sign in</h2>
-        <form>
+        <form action="choosing.html" method="get">
           <label for="email">Email address</label>
-          <input type="email" id="email" placeholder="you@example.com" required />
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
 
           <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter your password" required />
+          <input type="password" id="password" name="password" placeholder="Enter your password" required />
+
+          <div id="login-error" class="error-box" style="display:none;"></div>
 
           <button type="submit">Sign in securely</button>
         </form>
@@ -60,55 +62,6 @@
       </div>
     </section>
 
-    <section>
-      <div class="section-title">
-        <h2>Choose your grade</h2>
-        <p class="section-description">Tap a card to explore lessons, solved problems, and sample papers.</p>
-      </div>
-      <div class="grid">
-        <article class="card featured">
-          <h3>Grade 9</h3>
-          <p>Build a strong foundation with class 9 Science and Maths study material, including clear concepts and easy practice.</p>
-          <div class="tag">
-            <span>Science</span>
-            <span>Maths</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Grade 10</h3>
-          <p>Review science, maths, and PYQs with focused notes and exam-style practice for grade 10.</p>
-          <div class="tag">
-            <span>Science</span>
-            <span>Maths</span>
-            <span>PYQs</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Grade 11</h3>
-          <p>Prepare for grade 11 with Chemistry, Biology, Physics and Maths resources in the series: Physics, Chemistry, Biology, PYQs.</p>
-          <div class="tag">
-            <span>Physics</span>
-            <span>Chemistry</span>
-            <span>Biology</span>
-            <span>PYQs</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Grade 12</h3>
-          <p>Get grade 12 PYQs, Chemistry, Physics, Biology and Maths support with exam-ready notes and past paper practice.</p>
-          <div class="tag">
-            <span>Physics</span>
-            <span>Chemistry</span>
-            <span>Biology</span>
-            <span>PYQs</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
     <section class="info-banner">
       <h2>Why this page works for learners</h2>
       <p>It brings science and maths together so you can switch between subjects smoothly. Each grade section is crafted for concept clarity, practice mastery, and easy revision.</p>
@@ -117,7 +70,6 @@
     <section class="math-visual">
       <div class="math-visual-card">
         <div class="formula">
-          <div class="formula-title">Integration & differentiation</div>
           <span>∫<sub>0</sub><sup>π</sup> sin(x) dx = 2</span>
           <span>d/dx (x³) = 3x²</span>
           <span>d/dx (sin x) = cos x</span>
@@ -145,5 +97,6 @@
       <span>Ready to start? Fill the login form to continue.</span>
     </footer>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
